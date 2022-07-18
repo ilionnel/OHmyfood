@@ -1,0 +1,21 @@
+// UTILS
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+
+// vendors (feuille de style venant d'un tier, par exemple Bootstrap ou jQueryUI)
+
+
+// BASE
+@import "./base/typo";
+
+// COMPOSANTS (blocs BEM independant= boutons par exemple)
+
+// LAYOUTS (blocs BEM réutilisables)
+@import "./layouts/form";
+@import "./layouts/header";
+
+// PAGES (blocs de code qui ne s’appliquent qu’à une seule page)
+
+
+// THEMES (code thématique,par exemple un style customisé pour Noël ou pour l’été)
