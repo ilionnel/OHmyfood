@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr"><!--root ou racine de la page-->
 <head>
-
     <!--Metadonnée importante car l'attribut charset donne le type d'encodage des caractères-->
     <meta charset="utf-8">
 
     <!--Titre est obligatoire car c'est la référence qui permet de rechercher la page-->
-    <title>ohmyfood</title>
+    <title>ohmyfood </title>
 
     <!--Relie la page des styles à cette page WEB-->
 
@@ -23,13 +22,97 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <header>
-
+<body> <!--Contenu visible de la page Web-->
+    <header> <!--balise sémantique-->
+        <h1 class="logo">Ohmyfood</h1>
+    
+    <!--Affichage de la localisation des restaurants. 
+    À terme il sera possible de choisir sa localisation 
+    pour trouver des restaurants proches d’un certain lieu. 
+    (cf.p5 du debrief) -->
+        <form method="post" action="localisation.php"> <!--localisation.php est un fichier fictif qui permettrait d'effectuer la recherche de la localisation demandée-->
+            <div id="iconLocation">
+                <i id="lgLocationIcon" class="fa-solid fa-location-dot fa-lg"></i><!-- icon localisation via Font Awesome -->
+            </div>
+            
+            <input type="text" name="ville" placeholder="Paris, Belleville" />
+            
+            
+            <div class="presentation"><!-- Une courte présentation de l’entreprise. -->
+                <h2>Réserver le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            </div>
+            
+            <button lang="fr" type="submit">
+                <span id="search">Explorer nos restaurants</span>
+            </button>
+        </form>
     </header>
 
-
+    <main>
+        <section class="didacticSection">
+            <h2>Fonctionnement</h2>
+    
+            <div class="instructions">
+                <div class="purpleCaracters">
+                    <p>1</p>
+                </div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
+    
+            <div class="instructions">
+                <div class="purpleCaracters">
+                    <p>2</p>
+                </div>
+                <i class="fa-solid fa-list-ul"></i>
+                <p>Composez votre menu</p>
+            </div>
+                
+            <div class="instructions">
+                <div class="purpleCaracters">
+                    <p>3</p>
+                </div>
+                <i class="fa-solid fa-store"></i>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </section>
+    
+        <section>
+            <h2>Restaurants</h2>
+    
+            <div class="container">
+                <div class="card"></div>
+    
+                <div class="card"></div>
+    
+                <div class="card"></div>
+    
+                <div class="card"></div>
+            </div>
+        </section>
+    
+    </main>
+   
     <footer>
+        <h3>ohmyfood</h3>
+
+        <ul class="ulFooter">
+            <li class="bold">
+                <a class="bulletsPointFooter" href="#">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p>Proposer un restaurant</p>
+                </a>
+            </li>
+            <li class="bold">
+                <a class="bulletsPointFooter" href="#">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <p>Devenir partenaire</p>
+                </a>
+            </li>
+            <li><a class="bulletsPointFooter" href="#">Mentions légales</a></li>
+            <li><a class="bulletsPointFooter" href="#">Contact</a></li>
+        </ul>
 
     </footer>
 </body>

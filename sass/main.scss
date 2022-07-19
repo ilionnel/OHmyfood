@@ -7,7 +7,9 @@
 
 
 // BASE
+@import "./base/base";
 @import "./base/typo";
+
 
 // COMPOSANTS (blocs BEM independant= boutons par exemple)
 
@@ -16,6 +18,10 @@
 @import "./layouts/header";
 
 // PAGES (blocs de code qui ne s’appliquent qu’à une seule page)
-
+@import "./pages/accueil";
+@import "./pages/menuALaFrancaise";
+@import "./pages/menuLaNoteEnchantee";
+@import "./pages/menuLaPaletteDuGout";
+@import "./pages/menuLeDeliceDesSens";
 
 // THEMES (code thématique,par exemple un style customisé pour Noël ou pour l’été)

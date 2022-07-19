@@ -1,1 +1,7 @@
 // mettre les blocs BEM réutilisable, par exemple un header pour les mises en page de grande taille ou un footer
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
