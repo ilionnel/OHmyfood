@@ -1,1 +1,86 @@
-//  blocs BEM pas réutilisées ailleurs que dans cette page
+//  blocs BEM Pas réutilisées ailleurs que dans cette page
+a{
+    text-decoration: none;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.color-white{
+    color: white;
+}
+
+.location{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(205, 200, 200);
+    padding: 20px 0 20px 0;
+
+    &__icon{
+        padding:  0 20px;
+    }
+
+    &__input{
+        font-size: 18px;
+        border: none;
+        background-color: rgb(211, 206, 206);
+    }
+}
+
+.presentation{
+    // background-color: red;
+    @include displayCenter;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 0;
+    &__title{
+        width: 60%;
+    
+    }
+    &__subtitle{
+        width: 60%;
+        color:gray;
+    }
+}
+
+.manual{
+    width: 90%;
+    background-color: $color-background;
+    // border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 20px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 20px 0;
+    &__purpleCaracters{
+        position: relative;
+        margin: 0 0 0 -540px;
+    }
+    &__instructions{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.circle{
+    color: white;
+    background-color: $color-primay;
+    border-radius: 100%;
+    padding: 10px 15px;  
+}
+
+.greenPin{
+    background-color: $green;
+    color: green;
+    padding: 5px;
+    
+}
+

@@ -1,10 +1,61 @@
-body, main, footer{
+body, header, main, footer{
     width: 100%;
     max-width: 768px;
+
     margin: 0px;
     padding: 0px;
 }
 
 body{
     height: 6000px;
+}
+
+.container{
+    width:100%;
+    max-width: inherit;
+    @include displayCenter;
+    flex-direction: column;
+
+    &__title{
+        width: 90%;
+        max-width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    &__contents{
+        width: 100%;
+        max-width: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+.card{
+    width: 90%;
+    max-width: inherit;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 10px 0;
+    @include displayCenter;
+    flex-direction: column;
+    &__contents{
+        width: 90%;
+        max-width: inherit;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+    }
+}
+
+ul{
+    margin: 0;
+    padding: 0;
 }

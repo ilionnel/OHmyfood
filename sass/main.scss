@@ -11,7 +11,10 @@
 @import "./base/typo";
 
 
-// COMPOSANTS (blocs BEM independant= boutons par exemple)
+// COMPONENTS (blocs BEM independant= boutons par exemple)
+@import "./components/logo";
+@import "./components/buttonExplor";
+@import "./components/footer";
 
 // LAYOUTS (blocs BEM réutilisables)
 @import "./layouts/form";
@@ -19,9 +22,6 @@
 
 // PAGES (blocs de code qui ne s’appliquent qu’à une seule page)
 @import "./pages/accueil";
-@import "./pages/menuALaFrancaise";
-@import "./pages/menuLaNoteEnchantee";
-@import "./pages/menuLaPaletteDuGout";
-@import "./pages/menuLeDeliceDesSens";
+@import "./pages/menu";
 
 // THEMES (code thématique,par exemple un style customisé pour Noël ou pour l’été)

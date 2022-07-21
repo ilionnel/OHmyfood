@@ -1,0 +1,27 @@
+// blocs BEM independant : Footer
+.footer{
+    color: white;
+    @include displayCenter;
+    flex-direction: column;
+    background-color: $color-footer; 
+    &__title{
+        width: 90%;
+        padding: 20px 0;
+    }
+    &__contents{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+.bulletPointFooter{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 0 10px 0;
+}
+
+.onOneLine{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

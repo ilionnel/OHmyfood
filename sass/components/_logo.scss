@@ -1,5 +1,10 @@
 // blocs BEM independant= boutons par exemple
 
 .logo{
+    background-color: rgb(246, 246, 246);
     @include displayCenter;
+    margin: 0px;
+    padding: 20px 0 10px 0;
+    box-shadow: 0 0 40px 0 gray;
+    
 }
