@@ -1,1 +1,24 @@
 //  blocs BEM pas réutilisées ailleurs que dans cette page
+.headerOfMenu{
+    width:100%;
+    max-width: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $color-primay;
+    &__arrow{
+
+        background-color: $color-secondary;
+    }
+    &__logo{
+        background-color: aquamarine;
+        display:flex;
+        justify-self: center;
+        text-align: center;
+    }
+}
+
+.pictureOfRestaurant{
+    width: 100%;
+    max-width: inherit;
+}
