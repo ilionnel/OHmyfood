@@ -7,32 +7,56 @@ body, header, main, section, footer{
 }
 
 body{
-    height: 6000px;
+    height: 2000px;
 }
 
+section{
+    padding: 20px 0 ;
+}
 
+a{
+    text-decoration: none;
+}
+
+.onOneLine{
+    @include displayRow;
+}
+
+.keepItOnYourLeft{
+    justify-content: left;
+}
+
+.KeepItThin{
+    font-weight: lighter;
+}
+
+.underlineGreen{
+    border-bottom: 3px solid $color-terciary;
+}
+
+.keepApart{
+    justify-content: space-between;
+}
 
 .container{
     width:100%;
     max-width: inherit;
     @include displayCenter;
     flex-direction: column;
+    background-color: white;
 
     &__title{
         width: 90%;
         max-width: inherit;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        align-items: center;
         margin-top: 50px;
     }
     &__contents{
         width: 90%;
         max-width: inherit;
-        display: flex;
+        @include displayCenter;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
     }
 }
@@ -40,10 +64,9 @@ body{
 .card{
     width: 100%;
     max-width: inherit;
-    border: 2px solid black;
     border-radius: 25px;
-    box-shadow: 10px 5px 5px $color-primay;
-    margin: 10px 0;
+    box-shadow: 5px 5px 5px $color-footer;
+    margin: 20px 0;
     @include displayCenter;
     flex-direction: column;
     &__pictures{
@@ -55,8 +78,7 @@ body{
         width: 90%;
         max-width: inherit;
         color: black;
-        display: flex;
-        flex-direction: row;
+        @include displayRow;
         justify-content: space-between;
         align-items: center;
         margin: 10px;

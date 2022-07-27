@@ -1,12 +1,15 @@
 // blocs BEM independant= boutons par exemple
 
-.form__button{
+.button{
     background-color: $color-secondary;
     color: white;
     font-size: 20px;
     padding: 20px 40px;
     border: none;
     border-radius: 30px;
-    box-shadow: 2px 5px 2px 2px rgb(144, 141, 141);
-
+    box-shadow: 5px 5px 5px $color-footer;
+    &:hover{
+        color: $color-primay;
+        background-color: $color-terciary;
+    }
 }

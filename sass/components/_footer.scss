@@ -4,6 +4,7 @@
     @include displayCenter;
     flex-direction: column;
     background-color: $color-footer; 
+    margin-top: 40px;
     &__title{
         width: 90%;
         padding: 20px 0;
@@ -20,8 +21,3 @@
     margin: 0 0 10px 0;
 }
 
-.onOneLine{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}

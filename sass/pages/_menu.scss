@@ -1,24 +1,42 @@
 //  blocs BEM pas réutilisées ailleurs que dans cette page
+.mainOfMenu{
+    background-color: $color-background;
+}
 .headerOfMenu{
     width:100%;
     max-width: inherit;
-    display: flex;
-    flex-direction: row;
+    @include displayRow;
+    justify-content: center;
     align-items: center;
-    background-color: $color-primay;
+    background-color: $color-background;
     &__arrow{
-
-        background-color: $color-secondary;
+        position:relative;
+        left:-18%;
     }
     &__logo{
-        background-color: aquamarine;
-        display:flex;
-        justify-self: center;
-        text-align: center;
+        @include displayCenter;
     }
+}
+
+.headerOfCard{
+    font-size: 22px;
 }
 
 .pictureOfRestaurant{
+    position:absolute;
     width: 100%;
     max-width: inherit;
+    height: 560px;
+    object-fit: cover;
 }
+
+.container--position{
+    position: relative;
+    margin-top: 450px;
+}
+
+.container--radius{
+    border-radius: 80px 80px 0 0;
+}
+
+
