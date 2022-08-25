@@ -1,15 +1,19 @@
 // blocs BEM independant= boutons par exemple
 
 .button{
-    background-color: $color-secondary;
+    background: linear-gradient(pink, $color-secondary);
     color: white;
     font-size: 20px;
     padding: 20px 40px;
     border: none;
     border-radius: 30px;
     box-shadow: 5px 5px 5px $color-footer;
+    cursor: pointer;
+    transform: scale(1);transition-property: transform;
+    transition-duration: 1000ms ease-in-out;
     &:hover{
         color: $color-primay;
-        background-color: $color-terciary;
+        background: linear-gradient(green,$color-terciary);
+        transform: scale(1.1);
     }
 }

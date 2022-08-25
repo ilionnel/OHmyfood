@@ -18,6 +18,10 @@ a{
     text-decoration: none;
 }
 
+i{
+    padding: 0 10px 0 0;
+}
+
 .onOneLine{
     @include displayRow;
 }
@@ -64,7 +68,7 @@ a{
 .card{
     width: 100%;
     max-width: inherit;
-    border-radius: 25px;
+    border-radius: $border-radiusCard;
     box-shadow: 5px 5px 5px $color-footer;
     margin: 20px 0;
     @include displayCenter;

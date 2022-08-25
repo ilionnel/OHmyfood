@@ -40,14 +40,14 @@
     border-radius: 20px;
     box-shadow: 5px 5px $color-footer;
     @include displayRow;
-    justify-content: center;
     margin: 20px 0;
     padding: 20px 0;
     &__purpleCaracters{
-        position: absolute;
-        margin: -10px 0 0px -670px;
+        position:relative;
+        left: -3%;
     }
     &__instructions{
+        width: 95%;
         position: relative;
         @include displayRow;
         justify-content: center;
@@ -63,18 +63,33 @@
 }
 
 .greenPin{
-    position: absolute;
-    margin: -130px 0 0 370px;
+    width: 15%;
+    position: relative;
+    top: -90%;
+    left: 80%;
+    text-align: center;
     background-color: $green;
     color: green;
-    padding: 5px;
-    
+    padding: 1%;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 100%;
 }
 
 .imgOfRestaurants{
-    position: relative;
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+}
+
+ .pinkheart{
+    color: $color-primay;
+    display: none;
+}
+.heart:hover  {
+    display: none;
+    & + .pinkheart{
+        display: inline;
+    }
 }

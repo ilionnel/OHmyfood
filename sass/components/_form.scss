@@ -9,9 +9,12 @@ form{
 
 ::placeholder{
     color: black;
-    
+    &__input:focus{
+        color:red;
+    }
 }
 
 .location{
     background-color: $color-location;
+    
 }

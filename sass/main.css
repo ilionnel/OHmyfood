@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+i {
+  padding: 0 10px 0 0;
+}
+
 .onOneLine {
   display: flex;
   flex-direction: row;
@@ -117,10 +121,6 @@ p, h2, h4 {
   font-weight: bold;
 }
 
-i {
-  padding: 0 10px 0 0;
-}
-
 .logo {
   display: flex;
   justify-content: center;
@@ -138,10 +138,15 @@ i {
   border: none;
   border-radius: 30px;
   box-shadow: 5px 5px 5px rgb(60, 60, 60);
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 200ms;
 }
 .button:hover {
   color: #9356DC;
   background-color: #99E2D0;
+  transform: scale(1.1);
 }
 
 .footer {
@@ -186,6 +191,15 @@ form {
 
 ::placeholder {
   color: black;
+}
+::-moz-placeholder__input:focus {
+  color: red;
+}
+:-ms-input-placeholder__input:focus {
+  color: red;
+}
+::placeholder__input:focus {
+  color: red;
 }
 
 .location {
@@ -249,6 +263,8 @@ form {
 }
 
 .circle {
+  position: relative;
+  margin: 0px 0px 0px 100px;
   color: white;
   background-color: #9356DC;
   border-radius: 100%;
@@ -256,20 +272,33 @@ form {
 }
 
 .greenPin {
-  position: absolute;
-  margin: -130px 0 0 370px;
-  background-color: rgb(40, 240, 40);
+  position: relative;
+  margin: -130px 60px 0 520px;
+  background-color: rgb(128, 203, 192);
   color: green;
-  padding: 5px;
+  padding: 10px 10px;
+  border-radius: 3px;
+  font-weight: bold;
 }
 
 .imgOfRestaurants {
-  position: relative;
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.pinkheart {
+  color: #9356DC;
+  display: none;
+}
+.pinkheart:hover {
+  display: inline;
+}
+
+.heart:hover {
+  display: none;
 }
 
 .mainOfMenu {
