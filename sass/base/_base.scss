@@ -57,7 +57,7 @@ i{
         margin-top: 50px;
     }
     &__contents{
-        width: 90%;
+        width: 85%;
         max-width: inherit;
         @include displayCenter;
         flex-direction: column;
@@ -73,6 +73,7 @@ i{
     margin: 20px 0;
     @include displayCenter;
     flex-direction: column;
+    cursor: pointer;
     &__pictures{
         width: 100%;
         max-width: inherit;
@@ -100,3 +101,39 @@ ul{
         color: $color-secondary;
     }
 }
+
+.firstToAppear{
+    animation: show 1000ms 200ms;
+    
+}
+
+.secondToAppear{
+    animation: show 2500ms 200ms; 
+}
+
+.thridToAppear{
+    animation: show 5000ms 200ms; 
+}
+
+.fourthToAppear{
+    animation: show 7000ms 200ms; 
+}
+
+@keyframes show {
+    0% { 
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.blocInline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0 0 10px;
+}
+

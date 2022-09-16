@@ -39,36 +39,26 @@
     border-radius: 80px 80px 0 0;
 }
 
-.card{
-    &:hover {
-        cursor: pointer;
-    }
-    &:active{
-        & + .progress{
-            & > progress__greenBox{
-                transform: scale(1);
-            }
-        }
-    }
-}
-
-.progress__greenBox{
+.progress{
+    display: none;
     width: 80px;
     height: 100px;
     border-radius: 0 $border-radiusCard $border-radiusCard 0;
     @include displayCenter;
     background-color: $color-terciary;
     color: white;
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    transition: 2000ms cubic-bezier(.32,0,.07,1); 
+    // transform-origin: 100% 50%;
+    // transform: scaleX(0);
+    // transition: 2000ms cubic-bezier(.32,0,.07,1); 
+
 }
 
 .greenCheck{
+
     border: none;
     border-radius: 100%;
     background-color: white;
     color: $color-terciary;
     padding: 10px 0px 10px 10px;
-    transform: rotateX(180deg);
+    transform: rotateX(0deg);
 }
