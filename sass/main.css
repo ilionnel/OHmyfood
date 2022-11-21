@@ -60,7 +60,7 @@ i {
   margin-top: 50px;
 }
 .container__contents {
-  width: 90%;
+  width: 85%;
   max-width: inherit;
   display: flex;
   justify-content: center;
@@ -78,6 +78,7 @@ i {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 .card__pictures {
   width: 100%;
@@ -107,6 +108,54 @@ ul {
   color: #FF79DA;
 }
 
+.firstToAppear {
+  -webkit-animation: show 1000ms 200ms;
+          animation: show 1000ms 200ms;
+}
+
+.secondToAppear {
+  -webkit-animation: show 2500ms 200ms;
+          animation: show 2500ms 200ms;
+}
+
+.thridToAppear {
+  -webkit-animation: show 5000ms 200ms;
+          animation: show 5000ms 200ms;
+}
+
+.fourthToAppear {
+  -webkit-animation: show 7000ms 200ms;
+          animation: show 7000ms 200ms;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.blocInline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0 0 10px;
+}
+
 h1, h3 {
   font-family: "Shrikhand", cursive;
   margin: 0;
@@ -131,7 +180,7 @@ p, h2, h4 {
 }
 
 .button {
-  background-color: #FF79DA;
+  background: linear-gradient(pink, #FF79DA);
   color: white;
   font-size: 20px;
   padding: 20px 40px;
@@ -141,11 +190,10 @@ p, h2, h4 {
   cursor: pointer;
   transform: scale(1);
   transition-property: transform;
-  transition-duration: 200ms;
+  transition-duration: 1000ms ease-in-out;
 }
 .button:hover {
-  color: #9356DC;
-  background-color: #99E2D0;
+  filter: brightness(1.15);
   transform: scale(1.1);
 }
 
@@ -246,15 +294,15 @@ form {
   box-shadow: 5px 5px rgb(60, 60, 60);
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin: 20px 0;
   padding: 20px 0;
 }
 .manual__purpleCaracters {
-  position: absolute;
-  margin: -10px 0 0px -670px;
+  position: relative;
+  left: -3%;
 }
 .manual__instructions {
+  width: 95%;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -263,8 +311,6 @@ form {
 }
 
 .circle {
-  position: relative;
-  margin: 0px 0px 0px 100px;
   color: white;
   background-color: #9356DC;
   border-radius: 100%;
@@ -272,13 +318,17 @@ form {
 }
 
 .greenPin {
+  width: 15%;
   position: relative;
-  margin: -130px 60px 0 520px;
+  top: -90%;
+  left: 80%;
+  text-align: center;
   background-color: rgb(128, 203, 192);
   color: green;
-  padding: 10px 10px;
+  padding: 1%;
   border-radius: 3px;
   font-weight: bold;
+  font-size: 100%;
 }
 
 .imgOfRestaurants {
@@ -293,12 +343,12 @@ form {
   color: #9356DC;
   display: none;
 }
-.pinkheart:hover {
-  display: inline;
-}
 
 .heart:hover {
   display: none;
+}
+.heart:hover + .pinkheart {
+  display: inline;
 }
 
 .mainOfMenu {
@@ -344,4 +394,27 @@ form {
 
 .container--radius {
   border-radius: 80px 80px 0 0;
+}
+
+.progress {
+  display: none;
+  width: 80px;
+  height: 100px;
+  border-radius: 0 25px 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  color: white;
+  -webkit-animation: progress;
+          animation: progress;
+}
+
+.greenCheck {
+  border: none;
+  border-radius: 100%;
+  background-color: white;
+  color: #99E2D0;
+  padding: 10px 0px 10px 10px;
+  transform: rotateX(0deg);
 }/*# sourceMappingURL=main.css.map */

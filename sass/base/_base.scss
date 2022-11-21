@@ -68,9 +68,7 @@ i{
 .card{
     width: 100%;
     max-width: inherit;
-    border-radius: $border-radiusCard;
-    box-shadow: 5px 5px 5px $color-footer;
-    margin: 20px 0;
+    // margin: 20px 0;
     @include displayCenter;
     flex-direction: column;
     cursor: pointer;
@@ -103,7 +101,7 @@ ul{
 }
 
 .firstToAppear{
-    animation: show 1000ms 200ms;
+    animation: show 1000ms 500ms;
     
 }
 
@@ -137,3 +135,10 @@ ul{
     padding: 0 0 0 10px;
 }
 
+.border{
+    margin: 20px 0;
+    border: 1px solid black;
+    border-radius: $border-radiusCard;
+    box-shadow: 5px 5px 5px $color-footer;
+    display: flex;   
+}
