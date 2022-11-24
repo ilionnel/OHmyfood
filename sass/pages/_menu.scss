@@ -40,18 +40,16 @@
 }
 
 .progress{
-    display: none;
     width: 80px;
     height: 100px;
     border-radius: 0 $border-radiusCard $border-radiusCard 0;
     @include displayCenter;
     background-color: $color-terciary;
     color: white;
-    animation: progress
-    // transform-origin: 100% 50%;
-    // transform: scaleX(0);
-    // transition: 2000ms cubic-bezier(.32,0,.07,1); 
 
+    // display: none;
+    
+    
 }
 
 .greenCheck{
