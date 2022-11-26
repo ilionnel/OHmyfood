@@ -72,11 +72,15 @@ i{
     @include displayCenter;
     flex-direction: column;
     cursor: pointer;
+
+    transition: .5s width;
+
     &__pictures{
         width: 100%;
         max-width: inherit;
         height: 150px;
     }
+    
     &__contents{
         width: 90%;
         max-width: inherit;
@@ -86,10 +90,10 @@ i{
         align-items: center;
         margin: 10px;
     }
-    &:hover +.progress{
-        transform: translateX(-100px);
+    // &:hover +.progress{
+    //     transform: translateX(-100px);
          
-        }
+    //     }
 }
 
 ul{
@@ -139,10 +143,3 @@ ul{
     padding: 0 0 0 10px;
 }
 
-.border{
-    margin: 20px 0;
-    border: 1px solid black;
-    border-radius: $border-radiusCard;
-    box-shadow: 5px 5px 5px $color-footer;
-    display: flex;   
-}
