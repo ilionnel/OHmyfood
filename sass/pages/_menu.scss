@@ -45,7 +45,6 @@
 
     margin: 20px 0;
 
-    border: 1px solid black;
     border-radius: $border-radiusCard;
     box-shadow: 5px 5px 5px $color-footer;
 
@@ -86,9 +85,6 @@
     &__greenBox{
         transition: .5s transform;
     }
-
-    
-    
     }
 
     .greenCheck{
